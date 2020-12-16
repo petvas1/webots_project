@@ -1030,7 +1030,7 @@ DEF ball Solid {
   boundingObject USE FOOTBALL_SHAPE
   physics Physics {
     density -1
-    mass 0.1
+    mass 0.05
   }
   recognitionColors [
     1 1 1
