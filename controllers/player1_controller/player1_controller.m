@@ -10,11 +10,14 @@ wb_motor_set_position(right_motor, inf);
 wb_motor_set_velocity(left_motor, MAX_SPEED);
 wb_motor_set_velocity(right_motor, MAX_SPEED);
 
-wb_gps_enable(gps,TIME_STEP)
-% period = wb_gps_get_sampling_period(gps)
-% speed = wb_gps_get_speed(gps)
-% x_y_z_array = wb_gps_get_values(gps)
-
+gps = wb_robot_get_device('gps');
+wb_gps_enable(gps, TIME_STEP);
 
 while wb_robot_step(TIME_STEP) ~= -1
+% wb_console_print('Hello!');
+% x_y_z_array = wb_gps_get_values(gps);
+values = wb_gps_get_values(gps);
+wb_console_print(sprintf('MY_ROBOT is at position: %g %g %g\n', values(1), values(2), values(3)), WB_STDOUT);
+speed = wb_gps_get_speed(gps);
+
 end

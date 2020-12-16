@@ -4,8 +4,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.9953377909565398 -0.08528064532668411 -0.04505433859707365 0.8682240552653994
-  position -0.1070958462915115 1.5595167610738148 1.3997983499161177
+  orientation -0.999005138811326 -0.038520027726127955 -0.02247087209125234 0.8079830165126498
+  position -0.06091895071566369 1.4107719643836003 1.4415042368656337
 }
 TexturedBackground {
   texture "stadium"
@@ -862,20 +862,7 @@ DEF player_1 Robot {
       type "infra-red"
     }
     GPS {
-      children [
-        Solid {
-          children [
-            Shape {
-              appearance PBRAppearance {
-              }
-              geometry Cone {
-                bottomRadius 0.05
-                height 0.1
-              }
-            }
-          ]
-        }
-      ]
+      accuracy 3
     }
     DEF LS0 LightSensor {
       translation -0.0245 0.0144 -0.012
@@ -1009,9 +996,6 @@ DEF player_1 Robot {
       0 0.005 0
     ]
   }
-  recognitionColors [
-    0 0 0
-  ]
   controller "player1_controller"
   controllerArgs [
     ""
