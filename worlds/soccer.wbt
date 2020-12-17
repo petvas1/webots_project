@@ -4,13 +4,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-<<<<<<< Updated upstream
-  orientation -0.999005138811326 -0.038520027726127955 -0.02247087209125234 0.8079830165126498
-  position -0.06091895071566369 1.4107719643836003 1.4415042368656337
-=======
   orientation 0.9999428793633319 0.009448847760762168 0.004995726830317587 5.37614941546825
   position -0.007955563993411394 1.6434237276903185 1.3220139276680056
->>>>>>> Stashed changes
 }
 TexturedBackground {
   texture "stadium"
@@ -615,12 +610,8 @@ DEF stadium Solid {
   locked TRUE
 }
 DEF player_1 Robot {
-<<<<<<< Updated upstream
-  translation 0.0466373 1.55432e-15 0.196804
-=======
   translation -0.201132 -1.68754e-14 -0.162866
   rotation 0 -1 0 2.0944
->>>>>>> Stashed changes
   children [
     Group {
     }
@@ -988,9 +979,6 @@ DEF player_1 Robot {
       baudRate 57600
     }
   ]
-<<<<<<< Updated upstream
-  name "Khepera"
-=======
   name "player_1"
   model "Khepera"
   description "A mini mobile robot by K-Team SA"
@@ -2171,7 +2159,6 @@ DEF player_4 Robot {
     }
   ]
   name "player_4"
->>>>>>> Stashed changes
   model "Khepera"
   description "A mini mobile robot by K-Team SA"
   contactMaterial "khepera"
@@ -3009,11 +2996,7 @@ DEF ball Solid {
   boundingObject USE FOOTBALL_SHAPE
   physics Physics {
     density -1
-<<<<<<< Updated upstream
-    mass 0.1
-=======
     mass 0.01
->>>>>>> Stashed changes
   }
   recognitionColors [
     1 1 1
