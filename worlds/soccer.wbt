@@ -4,8 +4,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation 0.9999428793633319 0.009448847760762168 0.004995726830317587 5.37614941546825
-  position -0.007955563993411394 1.6434237276903185 1.3220139276680056
+  orientation 0.45817142014701534 -0.8740117776689276 -0.16180964821810973 5.513264120598159
+  position 0.4197429519642084 0.2373013503640999 0.44608116190124514
 }
 TexturedBackground {
   texture "stadium"
@@ -2966,6 +2966,40 @@ DEF player_6 Robot {
   controllerArgs [
     ""
   ]
+}
+DEF ball Robot {
+  translation 0 0.08 0
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+      }
+      device [
+        PositionSensor {
+          name "ps1"
+        }
+      ]
+      endPoint Solid {
+      }
+    }
+    DEF ball2 Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "textures/football_base_color.jpg"
+          ]
+        }
+        metalness 0
+      }
+      geometry Sphere {
+        radius 0.02
+      }
+    }
+  ]
+  name "ps1"
+  boundingObject USE ball2
+  physics Physics {
+  }
+  controller "ball1"
 }
 DEF ball Solid {
   translation 0 0.02 0
