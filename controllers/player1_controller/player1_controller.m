@@ -30,7 +30,7 @@ while wb_robot_step(TIME_STEP) ~= -1
 % wb_console_print('Hello!');
 % x_y_z_array = wb_gps_get_values(gps);
 values = wb_gps_get_values(gps);
-wb_console_print(sprintf('MY_ROBOT is at position: %g %g %g\n', values(1), values(2), values(3)), WB_STDOUT);
+%wb_console_print(sprintf('MY_ROBOT is at position: %g %g %g\n', values(1), values(2), values(3)), WB_STDOUT);
 speed = wb_gps_get_speed(gps);
 
 end
