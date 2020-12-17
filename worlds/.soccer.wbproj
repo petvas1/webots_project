@@ -5,6 +5,6 @@ sceneTreePerspectives: 000000ff0000000100000002000001e3000000ff01000000060100000
 maximizedDockId: -1
 centralWidgetVisible: 1
 orthographicViewHeight: 1
-textFiles: 0 "controllers/player1_controller/player1_controller.m"
+textFiles: 0 "controllers/player1_controller.m"
 consoles: Console:All:All
 renderingDevicePerspectives: e-puck:camera;1;1;0;0
