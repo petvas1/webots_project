@@ -6,6 +6,19 @@ left_motor = wb_robot_get_device('left wheel motor');
 right_motor = wb_robot_get_device('right wheel motor');
 wb_motor_set_position(left_motor, inf);
 wb_motor_set_position(right_motor, inf);
+<<<<<<< Updated upstream
+=======
+wb_motor_set_velocity(left_motor, 0);
+wb_motor_set_velocity(right_motor, 0);
+
+% movement of the robot, initializing variables
+sides = 9;   % polygon size 
+side_length = 0.13;
+wheel_radius = 0.0075;
+linear_velocity = wheel_radius*max_speed;
+side_time = side_length/linear_velocity;
+time_start = wb_robot_get_time;
+>>>>>>> Stashed changes
 
 wb_motor_set_velocity(left_motor, MAX_SPEED);
 wb_motor_set_velocity(right_motor, MAX_SPEED);
