@@ -1,2 +1,2 @@
 # webots_project
- basic_world
+ two robot players play a game of soccer in webots environment
